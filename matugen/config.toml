@@ -1,0 +1,14 @@
+[config]
+reload_apps = false
+
+[templates.quickshell]
+input_path = "~/speedDot/quickshell/Matugen-default.qml"
+output_path = "~/speedDot/quickshell/Colors.qml"
+
+[templates.kitty]
+input_path = "~/speedDot/kitty/kittyPreset.conf"
+output_path = "~/speedDot/kitty/kitty.conf"
+
+[templates.hyprland]
+input_path = "~/speedDot/hypr/hyprlandPreset.lua"
+output_path = "~/speedDot/hypr/hyprland.lua"
