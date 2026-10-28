@@ -1,12 +1,12 @@
 import QtQuick
 
 QtObject {
-    readonly property color primary: "#b1d18a"
-    readonly property color secondary: "#c0cbad"
+    readonly property color primary: "#afc6ff"
+    readonly property color secondary: "#bfc6dc"
 
-    readonly property color background: "#12140e"
-    readonly property color surface: "#12140e"
+    readonly property color background: "#121318"
+    readonly property color surface: "#121318"
 
-    readonly property color text: "#e2e3d8"
-    readonly property color outline: "#8f9285"
+    readonly property color text: "#e2e2e9"
+    readonly property color outline: "#8f9099"
 }

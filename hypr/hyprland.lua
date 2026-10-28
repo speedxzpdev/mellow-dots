@@ -54,7 +54,7 @@ local menu        = "hyprlauncher"
 
     hl.exec_cmd("sh ~/.config/hypr/scripts/restoreWallpaper.sh &")
 
-    hl.exec_cmd("qs -p ~/speedDot/quickshell")
+    hl.exec_cmd("qs -p ~/.config/quickshell")
  end)
 
 
@@ -100,8 +100,8 @@ hl.config({
         border_size = 2,
 
         col = {
-            active_border   = { colors = {"rgb(b1d18a)",
-            "rgb(c0cbad)"}, angle = 45 },
+            active_border   = { colors = {"rgb(afc6ff)",
+            "rgb(bfc6dc)"}, angle = 45 },
             inactive_border = "rgba(595959aa)",
         },
 

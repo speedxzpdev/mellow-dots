@@ -54,7 +54,7 @@ local menu        = "hyprlauncher"
 
     hl.exec_cmd("sh ~/.config/hypr/scripts/restoreWallpaper.sh &")
 
-    hl.exec_cmd("qs -p ~/speedDot/quickshell")
+    hl.exec_cmd("qs -p ~/.config/quickshell")
  end)
 
 
