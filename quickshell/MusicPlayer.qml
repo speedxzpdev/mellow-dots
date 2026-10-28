@@ -29,7 +29,7 @@ Rectangle {
 
 
         Image {
-            source: "file://" + Quickshell.env("HOME") + "/speedDot/assets/icons/" + (root.player ? "musicPlaying.svg" : "musicPlayerOff.svg")
+            source: "file://" + Quickshell.env("HOME") + "/.config/quickshell/assets/icons/" + (root.player ? "musicPlaying.svg" : "musicPlayerOff.svg")
         }
 
         

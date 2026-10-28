@@ -5,8 +5,8 @@ import QtQuick.Controls
 PanelWindow {
     id: root
 
-    property string iconWallpaper: "file://" + Quickshell.env("HOME") + "/speedDot/assets/icons/wallpaper.svg"
-    property string iconPoweroff: "file://" + Quickshell.env("HOME") + "/speedDot/assets/icons/poweroff.svg"
+    property string iconWallpaper: "file://" + Quickshell.env("HOME") + "/.config/quickshell/assets/icons/wallpaper.svg"
+    property string iconPoweroff: "file://" + Quickshell.env("HOME") + "/.config/quickshell/assets/icons/poweroff.svg"
 
     anchors {
         left: true
