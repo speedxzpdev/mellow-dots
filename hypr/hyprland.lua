@@ -50,7 +50,7 @@ local menu        = "hyprlauncher"
 -- Or execute your favorite apps at launch like this:
 --
  hl.on("hyprland.start", function ()
-    hl.exec_cmd("hyprpaper ~/.config/hypr/wallpapers/wallpaperDefault.png  & firefox")
+    hl.exec_cmd("hyprpaper & firefox")
 
     hl.exec_cmd("sh ~/.config/hypr/scripts/restoreWallpaper.sh &")
 
