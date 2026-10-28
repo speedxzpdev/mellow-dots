@@ -50,7 +50,7 @@ local menu        = "hyprlauncher"
 -- Or execute your favorite apps at launch like this:
 --
  hl.on("hyprland.start", function ()
-    hl.exec_cmd("hyprpaper & firefox")
+    hl.exec_cmd("hyprpaper ~/.config/hypr/wallpapers/wallpaperDefault.png  & firefox")
 
     hl.exec_cmd("sh ~/.config/hypr/scripts/restoreWallpaper.sh &")
 
@@ -242,7 +242,7 @@ hl.animation({
 hl.config({
     misc = {
         force_default_wallpaper = -1,    -- Set to 0 or 1 to disable the anime mascot wallpapers
-        disable_hyprland_logo   = true, -- If true disables the random hyprland logo / anime girl background. :(
+        disable_hyprland_logo   = false, -- If true disables the random hyprland logo / anime girl background. :(
     },
 })
 
@@ -306,6 +306,7 @@ hl.bind("SUPER + 0", hl.dsp.focus({ workspace = 10 }))
 hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("firefox"))
 hl.bind(mainMod .. " + S", hl.dsp.exec_cmd("spotify"))
+hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd('grim -g "$(slurp)" ~/screenshot-$(date +%Y-%m-%d_%H-%M-%S).png'))
 local closeWindowBind = hl.bind(mainMod .. " + C", hl.dsp.window.close())
 -- closeWindowBind:set_enabled(false)
 hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))

@@ -8,3 +8,6 @@ abbr --add gc 'git commit'
 abbr --add gp 'git push'
 
 
+if status is-interactive
+    fastfetch
+end
