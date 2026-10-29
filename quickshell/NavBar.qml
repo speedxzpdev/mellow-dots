@@ -32,13 +32,11 @@ PanelWindow {
     }
 
     Row {
-        anchors.right: parent.right
+        anchors.left: parent.left
         anchors.rightMargin: 10
         anchors.verticalCenter: parent.verticalCenter
 
-        Image {
-            source: "file://" + Quickshell.env("HOME") + "/speedDot/assets/icons/poweroff.svg"
-        }
+        WindowActive {}
 
     }
 }
