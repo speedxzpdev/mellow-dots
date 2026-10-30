@@ -1,35 +1,37 @@
 import QtQuick
 
-
-
 Rectangle {
+    id: root
 
     Colors {
-       id: pallete
+        id: palette
+    }
 
-       }
-
+    // Default values
     property int padding: 10
+    property int fontSize: 20
+    property string fontFamily: "JetBrainsMono"
+    property color backgroundColor: palette.outline
+    property color textColor: palette.text
 
     implicitWidth: clock.implicitWidth + padding * 2
     implicitHeight: clock.implicitHeight + padding * 2
 
-    color: pallete.outline
+    color: backgroundColor
     radius: 16
 
-    
-
-
     Text {
+        id: clock
         anchors.centerIn: parent
-       id: clock
-       text: Qt.formatDateTime(new Date(), "HH:mm:ss")
-       color: pallete.text
-       font.pixelSize: 20
-       font.family: "JetBrainsMono"
-       }
 
-       Timer {
+        text: Qt.formatDateTime(new Date(), "HH:mm:ss")
+        color: root.textColor
+
+        font.pixelSize: root.fontSize
+        font.family: root.fontFamily
+    }
+
+    Timer {
         interval: 1000
         running: true
         repeat: true
@@ -37,6 +39,5 @@ Rectangle {
         onTriggered: {
             clock.text = Qt.formatDateTime(new Date(), "HH:mm:ss")
         }
-}
-
+    }
 }
