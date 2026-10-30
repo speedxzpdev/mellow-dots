@@ -24,7 +24,7 @@
 <h1 align="center">Installation<h1/>
 
 ```bash
-git clone https://github.com/SEU-USUARIO/mellow-dots.git
+git clone https://github.com/speedxzpdev/mellow-dots.git
 cd mellow-dots
 sh scripts/install.sh
 ```
@@ -45,6 +45,7 @@ hyprctl reload
 | `Super + scroll` | `Does the same thing` |
 | `Super + q` | `Open kitty` |
 | `Super + b` | `Open Firefox` |
+| `Super + ` | `Close Window` |
 | `Super + f` | `Open dolphin` |
 | `Super + c` | `Close Window` |
 
