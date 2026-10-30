@@ -35,8 +35,10 @@ PanelWindow {
         anchors.left: parent.left
         anchors.rightMargin: 10
         anchors.verticalCenter: parent.verticalCenter
+        spacing: 10
 
         WindowActive {}
+        Workspaces {}
 
     }
 }
