@@ -25,7 +25,8 @@ install_dependencies() {
         fish \
         hyprpaper \
         starship \
-        ttf-jetbrains-mono
+        ttf-jetbrains-mono \
+        quickshell 
 
     echo "Dependencies installed!"
 }

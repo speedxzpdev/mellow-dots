@@ -41,4 +41,29 @@ PanelWindow {
         Workspaces {}
 
     }
+
+    Row {
+        anchors.right: parent.right
+        anchors.leftMargin: 10
+        anchors.verticalCenter: parent.verticalCenter
+
+        spacing: 10
+
+        Clock {
+            width: 150
+            height: 30
+        }
+        
+        ProfileImage {
+            radius: 16
+
+            MouseArea {
+                anchors.fill: parent
+
+                onClicked: {
+                    Quickshell.execDetached(["sh", Quickshell.env("HOME") + "/.config/hypr/scripts/setIcon.sh"])
+                }
+            }
+        }
+    }
 }

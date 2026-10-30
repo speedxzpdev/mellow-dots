@@ -1,8 +1,7 @@
-
 #!/usr/bin/env bash
 
 WALLPAPER_DIR="$HOME/Wallpapers"
-STATE_DIR="$HOME/.local/state/speeddot"
+STATE_DIR="$HOME/.local/state/mellow-dots"
 STATE_FILE="$STATE_DIR/current-wallpaper"
 
 set -euo pipefail
