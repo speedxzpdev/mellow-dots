@@ -8,8 +8,9 @@
 
 <h1 align="center">Screenshots<h1/>
 
-![Screen 1](assets/screenshots/screenshot-2026-10-28_00-05-55.png)
-![Screen 2](assets/screenshots/screenshot-2026-10-28_00-06-52.png)
+![Screen 1](assets/screenshots/screenshot-2026-10-29_23-54-22.png)
+
+[Video Preview](https://www.youtube.com/watch?v=ZvcxJIYnx7c)
 
 
 <h1 align="center">Dependencies<h1/>
@@ -45,7 +46,8 @@ hyprctl reload
 | `Super + scroll` | `Does the same thing` |
 | `Super + q` | `Open kitty` |
 | `Super + b` | `Open Firefox` |
-| `Super + ` | `Close Window` |
+| `Super + s` | `Open spotify (Require Spotify)` |
+| `Super + SHIFT + s` | `Print (Require Grim)` |
 | `Super + f` | `Open dolphin` |
 | `Super + c` | `Close Window` |
 
