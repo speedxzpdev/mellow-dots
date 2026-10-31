@@ -28,7 +28,9 @@ install_dependencies() {
         ttf-jetbrains-mono \
         quickshell \
         hyprlock \
-        hyprlaucnher
+        hyprlauncher \
+        hyprtoolkit
+
 
     echo "Dependencies installed!"
 }

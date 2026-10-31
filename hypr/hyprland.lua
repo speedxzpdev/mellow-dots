@@ -100,8 +100,8 @@ hl.config({
         border_size = 2,
 
         col = {
-            active_border   = { colors = {"rgb(afc6ff)",
-            "rgb(bfc6dc)"}, angle = 45 },
+            active_border   = { colors = {"rgb(ffb3b0)",
+            "rgb(e6bdba)"}, angle = 45 },
             inactive_border = "rgba(595959aa)",
         },
 
@@ -306,6 +306,8 @@ hl.bind("SUPER + 0", hl.dsp.focus({ workspace = 10 }))
 hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("firefox"))
 hl.bind(mainMod .. " + S", hl.dsp.exec_cmd("spotify"))
+hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlauncher"))
+
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd('grim -g "$(slurp)" ~/screenshot-$(date +%Y-%m-%d_%H-%M-%S).png'))
 local closeWindowBind = hl.bind(mainMod .. " + C", hl.dsp.window.close())
 -- closeWindowBind:set_enabled(false)
