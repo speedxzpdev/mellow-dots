@@ -10,9 +10,9 @@ input_path = "~/.config/kitty/kittyPreset.conf"
 output_path = "~/.config/kitty/kitty.conf"
 
 [templates.hyprland]
-input_path = "~/.config/hypr/hyprlandPreset.lua"
+input_path = "~/.config/hypr/templates/hyprlandPreset.lua"
 output_path = "~/.config/hypr/hyprland.lua"
 
 [templates.hyprlock]
-input_path = "~/.config/hypr/hyprlockPreset.conf"
+input_path = "~/.config/hypr/templates/hyprlockPreset.conf"
 output_path = "~/.config/hypr/hyprlock.conf"
