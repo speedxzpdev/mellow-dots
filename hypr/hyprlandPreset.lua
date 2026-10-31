@@ -405,3 +405,12 @@ hl.window_rule({
     move  = "20 monitor_h-120",
     float = true,
 })
+
+
+-- Quickshell blur
+hl.layer_rule({
+    match = { namespace = "quickshell"},
+    blur = true,
+    ignore_alpha = 0.1,
+    blur_popups = true
+})

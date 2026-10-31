@@ -57,11 +57,16 @@ PanelWindow {
         ProfileImage {
             radius: 16
 
+            
+
             MouseArea {
                 anchors.fill: parent
 
+                cursorShape: Qt.PointingHandCursor
+
                 onClicked: {
-                    Quickshell.execDetached(["sh", Quickshell.env("HOME") + "/.config/hypr/scripts/setIcon.sh"])
+                    //Quickshell.execDetached(["sh", Quickshell.env("HOME") + "/.config/hypr/scripts/setIcon.sh"])
+                    menuControl.visible = true
                 }
             }
         }
