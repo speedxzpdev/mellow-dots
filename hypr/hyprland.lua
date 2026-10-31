@@ -100,8 +100,8 @@ hl.config({
         border_size = 2,
 
         col = {
-            active_border   = { colors = {"rgb(afc6ff)",
-            "rgb(bfc6dc)"}, angle = 45 },
+            active_border   = { colors = {"rgb(ffb3b0)",
+            "rgb(e6bdba)"}, angle = 45 },
             inactive_border = "rgba(595959aa)",
         },
 
@@ -149,6 +149,14 @@ hl.curve("linear",         { type = "bezier", points = { {0, 0},       {1, 1}   
 hl.curve("almostLinear",   { type = "bezier", points = { {0.5, 0.5},   {0.75, 1}    } })
 hl.curve("quick",          { type = "bezier", points = { {0.15, 0},    {0.1, 1}     } })
 
+hl.curve("bounce", {
+    type = "spring",
+    mass = 1,
+    stiffness = 120,
+    dampening = 12
+})
+
+
 -- Default springs
 hl.curve("easy",           { type = "spring", mass = 1, stiffness = 238.1191, dampening = 24.21279333 })
 
@@ -165,9 +173,11 @@ hl.animation({ leaf = "layersIn",      enabled = true,  speed = 4,    bezier = "
 hl.animation({ leaf = "layersOut",     enabled = true,  speed = 1.5,  bezier = "linear",       style = "fade" })
 hl.animation({ leaf = "fadeLayersIn",  enabled = true,  speed = 1.79, bezier = "almostLinear" })
 hl.animation({ leaf = "fadeLayersOut", enabled = true,  speed = 1.39, bezier = "almostLinear" })
-hl.animation({ leaf = "workspaces",    enabled = true,  speed = 1.94, bezier = "almostLinear", style = "fade" })
-hl.animation({ leaf = "workspacesIn",  enabled = true,  speed = 1.21, bezier = "almostLinear", style = "fade" })
-hl.animation({ leaf = "workspacesOut", enabled = true,  speed = 1.94, bezier = "almostLinear", style = "fade" })
+
+hl.animation({ leaf = "workspaces",    enabled = true,  speed = 1.94, spring = "bounce", style = "slide" })
+hl.animation({ leaf = "workspacesIn",  enabled = true,  speed = 1.21, spring = "bounce", style = "slide" })
+hl.animation({ leaf = "workspacesOut", enabled = true,  speed = 1.94, spring = "bounce", style = "slide" })
+
 hl.animation({ leaf = "zoomFactor",    enabled = true,  speed = 7,    bezier = "quick" })
 
 -- Ref https://wiki.hypr.land/Configuring/Basics/Workspace-Rules/
@@ -208,32 +218,8 @@ hl.config({
         fullscreen_on_one_column = true,
     },
 })
-----------------
--- ANIMATIONS --
-----------------
-hl.animation({
-    leaf = "workspaces",
-    enabled = true,
-    speed = 8,
-    bezier = "default",
-    style = "slide"
-})
 
-hl.animation({
-    leaf = "workspacesIn",
-    enabled = true,
-    speed = 8,
-    bezier = "default",
-    style = "slide"
-})
 
-hl.animation({
-    leaf = "workspacesOut",
-    enabled = true,
-    speed = 8,
-    bezier = "default",
-    style = "slide"
-})
 
 ----------------
 ----  MISC  ----
@@ -306,6 +292,8 @@ hl.bind("SUPER + 0", hl.dsp.focus({ workspace = 10 }))
 hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("firefox"))
 hl.bind(mainMod .. " + S", hl.dsp.exec_cmd("spotify"))
+hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlauncher"))
+
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd('grim -g "$(slurp)" ~/screenshot-$(date +%Y-%m-%d_%H-%M-%S).png'))
 local closeWindowBind = hl.bind(mainMod .. " + C", hl.dsp.window.close())
 -- closeWindowBind:set_enabled(false)
