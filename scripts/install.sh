@@ -27,7 +27,8 @@ install_dependencies() {
         starship \
         ttf-jetbrains-mono \
         quickshell \
-        hyprlock
+        hyprlock \
+        hyprlaucnher
 
     echo "Dependencies installed!"
 }
