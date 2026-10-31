@@ -2,6 +2,7 @@
 
 STATE_DIR="$HOME/.local/state/mellow-dots"
 STATE_FILE="$STATE_DIR/icon.jpg"
+STATE_FILE_HYPR="$HOME/.config/hypr/assets/icon/icon.jpg"
 
 set -euo pipefail
 
@@ -18,5 +19,6 @@ if [ -z "$SELECTED" ]; then
 fi
 
 cp -- "$SELECTED" "$STATE_FILE"
+cp -- "$SELECTED" "$STATE_FILE_HYPR"
 quickshell kill
 quickshell

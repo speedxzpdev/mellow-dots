@@ -75,11 +75,12 @@ PanelWindow {
             anchors.centerIn: parent
 
             spacing: 10
-            columns: 3
+            columns: 4
 
             SetWallpaper {}
             Poweroff {}
             SetIcon {}
+            Lock {}
 
             
         }
