@@ -16,3 +16,7 @@ output_path = "~/.config/hypr/hyprland.lua"
 [templates.hyprlock]
 input_path = "~/.config/hypr/templates/hyprlockPreset.conf"
 output_path = "~/.config/hypr/hyprlock.conf"
+
+[templates.hyprtoolkit]
+input_path = "~/.config/hypr/templates/hyprtoolkitPreset.conf"
+output_path = "~/.config/hypr/hyprtoolkit.conf"
